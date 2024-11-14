@@ -1,0 +1,11 @@
+_G.running = true
+while _G.running do
+local args = {
+    [1] = {
+        ["10272"] = 3
+    }
+}
+
+game:GetService("ReplicatedStorage").Functions.Fuse.FuseRF:InvokeServer(unpack(args))
+task.wait(1)
+end
