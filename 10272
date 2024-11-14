@@ -7,5 +7,5 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").Functions.Fuse.FuseRF:InvokeServer(unpack(args))
-task.wait(1)
+task.wait(0.3)
 end
